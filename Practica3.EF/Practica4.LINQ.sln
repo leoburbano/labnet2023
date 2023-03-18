@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3.EF.UI", "Practica3.EF.UI\Practica3.EF.UI.csproj", "{38E35186-7A73-49AD-AA25-56040BBC5615}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica4.LINQ.UI", "Practica3.EF.UI\Practica4.LINQ.UI.csproj", "{38E35186-7A73-49AD-AA25-56040BBC5615}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3.EF.Data", "Practica3.EF.Data\Practica3.EF.Data.csproj", "{D83EB858-8E58-494F-BD0B-F055D1E3C95A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica4.LINQ.Data", "Practica3.EF.Data\Practica4.LINQ.Data.csproj", "{D83EB858-8E58-494F-BD0B-F055D1E3C95A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3.EF.Logic", "Practica3.EF.Logic\Practica3.EF.Logic.csproj", "{C2A0FCED-5190-49A7-8AA8-FD090F239F2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica4.LINQ.Logic", "Practica3.EF.Logic\Practica4.LINQ.Logic.csproj", "{C2A0FCED-5190-49A7-8AA8-FD090F239F2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3.EF.Entities", "Practica3.EF.Entities\Practica3.EF.Entities.csproj", "{ED8058FB-1349-40A7-8D0E-637511174E1A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3.EF.LogicTests", "Practica3.EF.LogicTests\Practica3.EF.LogicTests.csproj", "{677B845C-2E2E-4879-B0B1-8321DAD53F3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica4.LINQ.Entities", "Practica3.EF.Entities\Practica4.LINQ.Entities.csproj", "{ED8058FB-1349-40A7-8D0E-637511174E1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{ED8058FB-1349-40A7-8D0E-637511174E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED8058FB-1349-40A7-8D0E-637511174E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED8058FB-1349-40A7-8D0E-637511174E1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{677B845C-2E2E-4879-B0B1-8321DAD53F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{677B845C-2E2E-4879-B0B1-8321DAD53F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{677B845C-2E2E-4879-B0B1-8321DAD53F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{677B845C-2E2E-4879-B0B1-8321DAD53F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

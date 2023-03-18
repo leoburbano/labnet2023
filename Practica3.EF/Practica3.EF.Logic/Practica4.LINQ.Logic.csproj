@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38E35186-7A73-49AD-AA25-56040BBC5615}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Practica3.EF.UI</RootNamespace>
-    <AssemblyName>Practica3.EF.UI</AssemblyName>
+    <ProjectGuid>{C2A0FCED-5190-49A7-8AA8-FD090F239F2C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Practica3.EF.Logic</RootNamespace>
+    <AssemblyName>Practica3.EF.Logic</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -50,21 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BaseLogic.cs" />
+    <Compile Include="IABMLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShipperLogic.cs" />
+    <Compile Include="SupplierLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Practica3.EF.Entities\Practica3.EF.Entities.csproj">
-      <Project>{ed8058fb-1349-40a7-8d0e-637511174e1a}</Project>
-      <Name>Practica3.EF.Entities</Name>
+    <ProjectReference Include="..\Practica3.EF.Data\Practica4.LINQ.Data.csproj">
+      <Project>{D83EB858-8E58-494F-BD0B-F055D1E3C95A}</Project>
+      <Name>Practica4.LINQ.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Practica3.EF.Logic\Practica3.EF.Logic.csproj">
-      <Project>{C2A0FCED-5190-49A7-8AA8-FD090F239F2C}</Project>
-      <Name>Practica3.EF.Logic</Name>
+    <ProjectReference Include="..\Practica3.EF.Entities\Practica4.LINQ.Entities.csproj">
+      <Project>{ed8058fb-1349-40a7-8d0e-637511174e1a}</Project>
+      <Name>Practica4.LINQ.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

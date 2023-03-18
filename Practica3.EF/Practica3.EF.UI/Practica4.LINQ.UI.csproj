@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D83EB858-8E58-494F-BD0B-F055D1E3C95A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Practica3.EF.Data</RootNamespace>
-    <AssemblyName>Practica3.EF.Data</AssemblyName>
+    <ProjectGuid>{38E35186-7A73-49AD-AA25-56040BBC5615}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Practica3.EF.UI</RootNamespace>
+    <AssemblyName>Practica3.EF.UI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,8 +42,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NorthwindContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,9 +58,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Practica3.EF.Entities\Practica3.EF.Entities.csproj">
+    <ProjectReference Include="..\Practica3.EF.Data\Practica4.LINQ.Data.csproj">
+      <Project>{D83EB858-8E58-494F-BD0B-F055D1E3C95A}</Project>
+      <Name>Practica4.LINQ.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Practica3.EF.Entities\Practica4.LINQ.Entities.csproj">
       <Project>{ed8058fb-1349-40a7-8d0e-637511174e1a}</Project>
-      <Name>Practica3.EF.Entities</Name>
+      <Name>Practica4.LINQ.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Practica3.EF.Logic\Practica4.LINQ.Logic.csproj">
+      <Project>{C2A0FCED-5190-49A7-8AA8-FD090F239F2C}</Project>
+      <Name>Practica4.LINQ.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -70,17 +70,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Practica3.EF.Data\Practica3.EF.Data.csproj">
+    <ProjectReference Include="..\Practica3.EF.Data\Practica4.LINQ.Data.csproj">
       <Project>{D83EB858-8E58-494F-BD0B-F055D1E3C95A}</Project>
-      <Name>Practica3.EF.Data</Name>
+      <Name>Practica4.LINQ.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Practica3.EF.Entities\Practica3.EF.Entities.csproj">
+    <ProjectReference Include="..\Practica3.EF.Entities\Practica4.LINQ.Entities.csproj">
       <Project>{ed8058fb-1349-40a7-8d0e-637511174e1a}</Project>
-      <Name>Practica3.EF.Entities</Name>
+      <Name>Practica4.LINQ.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Practica3.EF.Logic\Practica3.EF.Logic.csproj">
+    <ProjectReference Include="..\Practica3.EF.Logic\Practica4.LINQ.Logic.csproj">
       <Project>{C2A0FCED-5190-49A7-8AA8-FD090F239F2C}</Project>
-      <Name>Practica3.EF.Logic</Name>
+      <Name>Practica4.LINQ.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
