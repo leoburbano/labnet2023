@@ -1,0 +1,37 @@
+﻿@model Practica3.EF.MVC.Models.ShipperViewModel
+@{
+    ViewBag.Title = "Actualizar";
+}
+
+<div class="container d-flex justify-content-between">
+    <h2 class="mt-3 display-4 ">Actualizar</h2>
+    <div class="d-flex align-items-center">
+       
+        <a class="btn btn-outline-secondary" href="/Shipper">Regresar</a>
+    </div>
+</div>
+<div class="container">
+        <div class="d-flex justify-content-center align-content-center">
+            <form method="post" id="factualizar" onsubmit="factualizar(event)">
+                <div class="form-group">
+                    <div class="form-group">
+
+                        <label for="Name">Nombre</label>
+                        <input class="form-control" required id="Name" name="Name" type="text" value="@Model.Name" />
+                    </div>
+                    <div class="form-group">
+
+                        <label for="Phone">Telefono</label>
+                        <input class="form-control" required id="Phone" name="Phone" type="text" value="@Model.Phone" />
+                    </div>
+                    <div class="form-group">
+
+                        <button class="btn btn-outline-success" type="submit">Actualizar</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+           
+        </div>
+
+

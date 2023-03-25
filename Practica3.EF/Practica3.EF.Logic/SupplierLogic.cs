@@ -10,9 +10,9 @@ namespace Practica3.EF.Logic
 {
     public class SupplierLogic : BaseLogic, IABMLogic<Suppliers>
     {
-        public IEnumerable<Suppliers> GetAll()
+        public List<Suppliers> GetAll()
         {
-            return _northwindContext.Suppliers;
+            return _northwindContext.Suppliers.ToList();
         }
         
         public void Add(Suppliers newShipper)
@@ -34,6 +34,11 @@ namespace Practica3.EF.Logic
             var supplierUpdate = _northwindContext.Suppliers.Find(shipper.SupplierID);
             supplierUpdate.CompanyName = shipper.CompanyName;
             _northwindContext.SaveChanges();
+        }
+
+        public Suppliers GetById(int id)
+        {
+            return _northwindContext.Suppliers.FirstOrDefault(s => s.SupplierID == id);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Practica3.EF.Logic
 {
     interface IABMLogic<T>
     {
-        IEnumerable<T> GetAll();
+        List<T> GetAll();
 
         void Add(T newShipper);
 
