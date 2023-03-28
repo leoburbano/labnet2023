@@ -3,8 +3,6 @@
     min-height: 100%;
 }
 
-
-
 .footer {
     position: absolute;
     bottom: 0;
@@ -22,7 +20,7 @@
 }
 
     .hero::before {
-        background-image: url("https://images.pexels.com/photos/753331/pexels-photo-753331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-image: url("https://wallpaperaccess.com/full/781822.jpg");
         background-size: cover;
         position: absolute;
         content: "";
@@ -62,4 +60,38 @@ textarea {
     max-width: 280px;
 }
 
+.fullcontainer {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+  
+   
+}
 
+    .fullcontainer::before {
+        background-image: url("https://rare-gallery.com/mocahbig/407359-movie-poster-Breaking-Bad-Bryan-Cranston-Walter-White.jpg");
+        background-size: cover;
+        position: absolute;
+        content: "";
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+ .titulo{
+     color: #ffffff;
+     opacity: 0.99;
+ }
+
+ .boton{
+     opacity: 0.99;
+ }
+
+.frases {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}

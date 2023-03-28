@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practica3.EF.MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace Practica3.EF.MVC.Controllers
 {
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
             return View();

@@ -1,0 +1,30 @@
+﻿@model List<Practica3.EF.MVC.Models.BreakingBadQuoteModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="fullcontainer">
+    
+
+        <h2 class="display-4 text-center text-secondary titulo">Frases de Breaking Bad</h2>
+    
+    <div class="frases container" >
+
+ @foreach (var quote in Model)
+    {
+        <div class="card">
+            <div class="card-header">
+                Frase
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>@quote.Quote</p>
+                    <footer class="blockquote-footer"><cite title="Source Title">@quote.Author</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    }
+    </div>
+    
+</div>
+

@@ -4,14 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shippers Northwind</title>
+    <title>Consumo API</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="h-100">
     <nav class="navbar navbar-expand-lg text navbar-dark bg-dark">
-        <a class="navbar-brand"> @Html.ActionLink("TP-6", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+        <a class="navbar-brand"> @Html.ActionLink("TP-7", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,6 +20,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">@Html.ActionLink("Inicio", "Index", "Home", new { }, new { @class = "nav-link" })</li>
                 <li class="nav-item">@Html.ActionLink("Shippers", "Index", "Shipper", new { }, new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("Frases", "Index", "BreakingBad", new { }, new { @class = "nav-link" })</li>
                 <li class="nav-item">@Html.ActionLink("Contacto", "Contact", "Home", new { }, new { @class = "nav-link" })</li>
             </ul>
         </div>
@@ -28,7 +29,7 @@
         @RenderBody()
         <hr />
         <footer class="footer text-center bg-dark text-white pt-3 pb-2 mt-auto">
-            <p>Leandro Burbano &copy; @DateTime.Now.Year - Lab .Net TP-6 MVC </p>
+            <p>Leandro Burbano &copy; @DateTime.Now.Year - Lab .Net TP-7 Consumo API Externa </p>
         </footer>
     </div>
 
